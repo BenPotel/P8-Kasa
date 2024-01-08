@@ -1,13 +1,20 @@
-import React from "react";
-import logo from "../assets/Kasa.svg";
+import Header from "../components/Header";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
-function Home() {
+import image from "../assets/Banner-img.png";
+
+export default function Home() {
   return (
     <div>
-      <img src={logo} alt="Logo Kasa" />
-      <h1>KASA TEST</h1>
+      <Header />
+      <Banner
+        image={image}
+        alt="Photo de récifs en bord de mer"
+        title="Chez vous, partout et ailleurs"
+      />
+
+      <Footer />
     </div>
   );
 }
-
-export default Home;

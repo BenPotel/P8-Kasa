@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../assets/Kasa.svg";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-function Accomodation() {
+export default function Accomodation() {
   return (
     <div>
-      <img src={logo} alt="Logo Kasa" />
+      <Header />
       <h1>Nos Logements</h1>
+      <Footer />
     </div>
   );
 }
-
-export default Accomodation;

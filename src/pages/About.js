@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../assets/Kasa.svg";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-function About() {
+export default function About() {
   return (
     <div>
-      <img src={logo} alt="Logo Kasa" />
+      <Header />
       <h1>KASA À propos</h1>
+      <Footer />
     </div>
   );
 }
-
-export default About;

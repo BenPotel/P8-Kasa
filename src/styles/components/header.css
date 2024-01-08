@@ -1,0 +1,39 @@
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 80px;
+
+}
+
+
+.nav_links {
+    display: flex;
+    gap: 45px;
+    position: relative;
+}
+
+.nav_links a {
+    color: #FF6060;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+.nav_links a:hover {
+    text-decoration: underline #FF6060 2px;
+
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: #FF6060;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
