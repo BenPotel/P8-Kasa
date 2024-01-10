@@ -1,3 +1,5 @@
+import "./banner.css";
+
 export default function Banner(props) {
   return (
     <section className="banner">
