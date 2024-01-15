@@ -1,5 +1,5 @@
 import Banner from "../components/Banner/Banner";
-import Card from "../components/Gallery/Gallery";
+import Card from "../components/Card/Card";
 import image from "../assets/banner-img.png";
 
 export default function Home() {

@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import "./gallery.css"; // Import your CSS file for styling
+import { Link } from "react-router-dom";
+import "./card.css"; // Import your CSS file for styling
 
 export default function Card() {
   const [gallery, setGallery] = useState([]);
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/accomodation/:id");
-  };
+
   useEffect(() => {
     // Fetch gallery data/properties from the API to create the cards
     fetch("http://localhost:8080/api/properties")
@@ -19,14 +16,14 @@ export default function Card() {
   return (
     <div className="gallery-container">
       {gallery.map((item) => (
-        <div
-          key={item.id}
+        <Link
           className="gallery-item"
-          onClick={() => handleClick(item.id)}
+          key={item.id}
+          to={`./accomodation/${item.id}`}
         >
           <img src={item.cover} alt={item.title} />
           <p>{item.title}</p>
-        </div>
+        </Link>
       ))}
     </div>
   );

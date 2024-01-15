@@ -1,7 +1,10 @@
+import React from "react";
+import AccomodationContent from "../components/AccomodationContent/AccomodationContent";
+
 export default function Accomodation() {
   return (
     <div>
-      <h1>Nos Logements</h1>
+      <AccomodationContent />
     </div>
   );
 }
