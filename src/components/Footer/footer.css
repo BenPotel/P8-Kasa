@@ -1,4 +1,5 @@
 footer {
+    margin-top: 20px;
     display: flex;
     background-color: black;
     color: white;
@@ -14,7 +15,29 @@ footer img {
 
 }
 
-footer sp {
+footer p {
     margin: 30px 0;
     font-size: 24px;
+}
+
+
+@media (max-width: 767.98px) {
+    footer {
+        height: 209px;
+
+    }
+
+    footer img {
+        margin-top: 65px;
+        font-size: 20px;
+        width: 142px;
+
+    }
+
+    footer p {
+        margin: 15px 0;
+        font-size: 14px;
+
+
+    }
 }

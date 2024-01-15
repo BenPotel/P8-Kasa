@@ -1,7 +1,9 @@
+import Error404 from "../components/Error404/Error404";
+
 export default function Page404() {
   return (
     <div>
-      <h1>Ceci n'est pas la page que vous recherchiez!</h1>
+      <Error404 />
     </div>
   );
 }

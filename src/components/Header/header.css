@@ -6,7 +6,6 @@
 
 }
 
-
 .nav_links {
     display: flex;
     gap: 45px;
@@ -19,21 +18,38 @@
     text-decoration: none;
 }
 
-.nav_links a:hover {
-    text-decoration: underline #FF6060 2px;
-
-}
-
 .nav-active {
     position: relative;
 }
 
 .nav-active::after {
     content: "";
-    height: 4px;
+    height: 2px;
     width: 100%;
     background: #FF6060;
     position: absolute;
     bottom: 0px;
     left: 0px;
+}
+
+@media (max-width: 767.98px) {
+    .header_nav {
+        margin: 20px;
+    }
+
+    .header_nav img {
+        height: 45px;
+    }
+
+    .nav_links {
+        gap: 20px;
+    }
+
+    .nav_links a {
+        font-size: 16px;
+    }
+
+    .nav-active::after {
+        height: 1px;
+    }
 }

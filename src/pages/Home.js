@@ -1,5 +1,6 @@
 import Banner from "../components/Banner/Banner";
-import image from "../assets/Banner-img.png";
+import Card from "../components/Gallery/Gallery";
+import image from "../assets/banner-img.png";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         alt="Photo de récifs en bord de mer"
         title="Chez vous, partout et ailleurs"
       />
+      <Card />
     </div>
   );
 }
