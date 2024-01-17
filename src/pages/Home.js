@@ -4,7 +4,7 @@ import image from "../assets/banner-img.png";
 
 export default function Home() {
   return (
-    <div>
+    <div className="content">
       <Banner
         image={image}
         alt="Photo de récifs en bord de mer"

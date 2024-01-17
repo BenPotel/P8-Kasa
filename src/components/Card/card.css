@@ -6,7 +6,7 @@
     padding: 50px 10px;
     background-color: #F6F6F6;
     border-radius: 25px;
-    margin: 0 80px 50px;
+    margin-bottom: 50px;
     position: relative;
     justify-content: center;
 }
@@ -73,7 +73,7 @@
 
 @media (max-width:767.98px) {
     .gallery-container {
-        margin: 22px 20px;
+        margin: 15px 0;
         background-color: #fff;
         padding: 0;
         row-gap: 20px;

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 45px 80px;
+    margin: 45px 0;
 
 }
 
@@ -34,7 +34,7 @@
 
 @media (max-width: 767.98px) {
     .header_nav {
-        margin: 20px;
+        margin: 20px 0;
     }
 
     .header_nav img {

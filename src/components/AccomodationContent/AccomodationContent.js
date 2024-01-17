@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Carousel from "../Carousel/Carousel";
 import Tags from "../Tags/Tags";
+import Host from "../Host/Host";
+import Rating from "../Rating/Rating";
+import Collapse from "../Collapse/Collapse";
+import "./accomodationContent.css";
 
 export default function AccomodationContent() {
   const [cardData, setCardData] = useState(null);
@@ -37,9 +41,30 @@ export default function AccomodationContent() {
   }
 
   return (
-    <div>
+    <div className="content">
       <Carousel images={cardData.pictures} />
-      <Tags data={cardData.tags} />
+
+      <div className="description_column">
+        <div className="description_title">
+          <h2>{cardData.title}</h2>
+          <p>{cardData.location}</p>
+          <Tags tagData={cardData.tags} />
+        </div>
+
+        <div className="description_host">
+          <Host hostData={cardData.host} />
+          <Rating ratingData={cardData.rating} />
+        </div>
+      </div>
+
+      <div className="collapse_column">
+        <Collapse title="Description" content={cardData.description} />
+        <Collapse
+          title="Equipements"
+          content={cardData.equipments}
+          isList={true}
+        />
+      </div>
     </div>
   );
 }

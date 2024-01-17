@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import Footerlogo from "../../assets/Kasa-Footer.svg";
+import Footerlogo from "../../assets/kasa-footer.svg";
 
 const Footer = () => {
   return (

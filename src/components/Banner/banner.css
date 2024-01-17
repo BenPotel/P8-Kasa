@@ -1,5 +1,5 @@
 .banner {
-    margin: 0 80px 45px;
+    margin: 0 0 45px;
     position: relative;
 }
 
@@ -46,7 +46,7 @@
 
 @media (max-width: 767.98px) {
     .banner {
-        margin: 0 20px;
+        margin: 0;
     }
 
     .banner::before {

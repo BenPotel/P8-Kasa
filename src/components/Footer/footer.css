@@ -1,11 +1,12 @@
 footer {
-    margin-top: 20px;
+    margin-top: 45px;
     display: flex;
     background-color: black;
     color: white;
     flex-direction: column;
     width: 100%;
     align-items: center;
+
 }
 
 footer img {
@@ -24,7 +25,7 @@ footer p {
 @media (max-width: 767.98px) {
     footer {
         height: 209px;
-
+        margin-top: 20px;
     }
 
     footer img {

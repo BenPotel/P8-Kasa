@@ -1,6 +1,7 @@
 import Banner from "../components/Banner/Banner";
 import image from "../assets/banner-img2.png";
 import Collapse from "../components/Collapse/Collapse";
+import "../styles/index.css";
 
 const about = [
   {
@@ -28,7 +29,7 @@ const about = [
 
 export default function About() {
   return (
-    <div>
+    <div className="content">
       <Banner image={image} />
       <div className="about_div">
         {about.map((data, index) => (

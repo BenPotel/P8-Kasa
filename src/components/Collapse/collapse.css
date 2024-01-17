@@ -1,7 +1,7 @@
 .collapse {
-    padding: 20px 0;
-    margin: 0 160px;
-    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    width: 100%;
 }
 
 .collapse_title {
@@ -11,7 +11,6 @@
     background-color: #ff6060;
     color: #fff;
     padding: 0 15px;
-    height: 55px;
     border-radius: 10px 10px 10px 10px;
     position: relative;
 }
@@ -19,6 +18,8 @@
 .collapse_title h2 {
     font-weight: 500;
     font-size: 24px;
+    margin: 10px 0;
+
 }
 
 .collapse_icon {
@@ -89,7 +90,7 @@
 @media (max-width: 767.98px) {
     .collapse {
         padding: 20px 0 15px;
-        margin: 0 20px;
+        margin: 0;
 
     }
 
@@ -107,6 +108,10 @@
     }
 
     .collapse_content p {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .collapse_content.facilities li {
+        font-size: 14px;
     }
 }

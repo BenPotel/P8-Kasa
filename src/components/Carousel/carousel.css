@@ -1,7 +1,8 @@
 .carrousel_container {
     position: relative;
     height: 415px;
-    margin: 45px 80px;
+    margin: 45px 0 15px;
+
 }
 
 .carrousel_container img {
@@ -29,4 +30,42 @@
     width: 45px;
     height: 80px;
     cursor: pointer;
+}
+
+.slide_number {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+
+    .carrousel_container {
+        height: 255px;
+        margin: 20px 0 0;
+    }
+
+    .carrousel_container img {
+        border-radius: 10px;
+    }
+
+    .carrousel_container .left_arrow {
+        width: 24px;
+        height: 24px;
+        left: 5px;
+    }
+
+    .carrousel_container .right_arrow {
+        width: 24px;
+        height: 24px;
+        right: 5px;
+    }
+
+    .slide_number {
+        display: none;
+    }
 }
