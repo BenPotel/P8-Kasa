@@ -13,3 +13,16 @@
 .empty-star {
     color: #e3e3e3;
 }
+
+@media (max-width:767.98px) {
+
+    .rating {
+        margin-top: 0;
+    }
+
+    .rating .fa-star {
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 4px;
+    }
+}

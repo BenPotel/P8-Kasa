@@ -3,11 +3,11 @@ body {
     font-family: "montserrat";
     box-sizing: border-box;
     color: #ff6060;
+    font-weight: 500;
 }
 
 h2 {
     font-size: 36px;
-    font-weight: 500;
     margin-bottom: 0;
 }
 
@@ -39,5 +39,9 @@ p {
     .content {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .about_div {
+        margin: 15px 0;
     }
 }

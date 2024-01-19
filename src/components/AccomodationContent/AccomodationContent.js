@@ -47,7 +47,7 @@ export default function AccomodationContent() {
       <div className="description_column">
         <div className="description_title">
           <h2>{cardData.title}</h2>
-          <p>{cardData.location}</p>
+          <p className="location">{cardData.location}</p>
           <Tags tagData={cardData.tags} />
         </div>
 
