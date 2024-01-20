@@ -61,7 +61,6 @@
 
     .text_overlay {
         left: 15px;
-        /* Adjust as needed */
         transform: translate(0, -50%);
         text-align: left;
         max-width: 60%;
