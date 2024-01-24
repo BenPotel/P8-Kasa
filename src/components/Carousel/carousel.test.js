@@ -22,5 +22,23 @@ describe("Carousel component", () => {
     fireEvent.click(document.querySelector(".left_arrow"));
     expect(getByAltText("Slide 1")).toBeInTheDocument();
     expect(getByText("1/3")).toBeInTheDocument();
+
+    // Click next button to reach the last slide to see if the loop is functional
+    fireEvent.click(document.querySelector(".right_arrow"));
+    fireEvent.click(document.querySelector(".right_arrow"));
+
+    // Checking we're on the last slide
+    expect(getByAltText("Slide 3")).toBeInTheDocument();
+    expect(getByText("3/3")).toBeInTheDocument();
+
+    // Click next button to loop back to the first slide
+    fireEvent.click(document.querySelector(".right_arrow"));
+    expect(getByAltText("Slide 1")).toBeInTheDocument();
+    expect(getByText("1/3")).toBeInTheDocument();
+
+    // Click previous button to loop back to the last slide
+    fireEvent.click(document.querySelector(".left_arrow"));
+    expect(getByAltText("Slide 3")).toBeInTheDocument();
+    expect(getByText("3/3")).toBeInTheDocument();
   });
 });

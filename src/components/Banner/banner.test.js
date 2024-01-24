@@ -25,4 +25,20 @@ describe("Banner component", () => {
     );
     expect(queryByText("Test Title")).toBeNull();
   });
+
+  it("should apply the 'banner' class", () => {
+    const { getByTestId } = render(
+      <Banner image="test-image.jpg" alt="Test Alt" title="Test Title" />
+    );
+    const bannerComponent = getByTestId("banner-component");
+    expect(bannerComponent).toHaveClass("banner");
+  });
+
+  it("should apply the 'text_overlay' class", () => {
+    const { getByTestId } = render(
+      <Banner image="test-image.jpg" alt="Test Alt" title="Test Title" />
+    );
+    const textOverlay = getByTestId("text-overlay");
+    expect(textOverlay).toHaveClass("text_overlay");
+  });
 });
