@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./card.css"; // Import your CSS file for styling
+import "./card.css";
 
 export default function Card() {
   const [gallery, setGallery] = useState([]);

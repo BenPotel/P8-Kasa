@@ -1,12 +1,12 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Carousel from "./Carousel"; // Update the path accordingly
+import Carousel from "./Carousel";
 
 describe("Carousel component", () => {
   const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
 
-  it("renders with initial state and updates correctly", () => {
+  it("should render with initial state and update correctly", () => {
     const { getByAltText, getByText } = render(<Carousel images={images} />);
 
     // Initial state
